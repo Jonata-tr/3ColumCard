@@ -1,0 +1,29 @@
+main{
+  display: grid;
+  grid-auto-rows: auto auto auto;
+  place-content: center;
+
+}
+
+.setores{
+  width: 210px;
+  height: 330px;
+  padding: 3rem;
+}
+
+.sedan{
+  background-color: blueviolet;
+  border-radius: 10px 10px 0 0;
+}
+
+.luxury{
+  background-color: brown;
+}
+
+.suvs{
+  background-color: rgba(0, 0, 0, 0.356)0, 0, 0, 0.849)0, 0, 0, 0.849);
+}
+
+.texto{
+  text-align: justify;
+}
