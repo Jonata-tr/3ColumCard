@@ -1,29 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root{
+  --orange:hsl(31, 77%, 52%);
+  --darkCyan: hsl(184, 100%, 22%);
+  --VaryDarkCyan: hsl(179, 100%, 13%);
+  --paragraph: hsla(0, 0%, 100%, 0.75);
+  --ligthGray: hsl(0, 0%, 95%);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+body{
+  padding: .5rem 0;
+}
+
 main{
   display: grid;
-  grid-auto-rows: auto auto auto;
   place-content: center;
-
 }
 
 .setores{
-  width: 210px;
-  height: 330px;
-  padding: 3rem;
+  width: 100%;
+  max-width: 258px;
+  height: 100%;
+  max-height: 330px;
+  padding: 3rem 2.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  letter-spacing: .6px;
 }
 
-.sedan{
-  background-color: blueviolet;
-  border-radius: 10px 10px 0 0;
-}
-
-.luxury{
-  background-color: brown;
-}
-
-.suvs{
-  background-color: rgba(0, 0, 0, 0.356)0, 0, 0, 0.849)0, 0, 0, 0.849);
+.setores h1{
+  color:var(--ligthGray);
+  font-family: 'Big Shoulders Display';
+  font-weight: 700;
+  font-size: 2.5rem;
 }
 
 .texto{
-  text-align: justify;
+  color: var(--paragraph);
+  text-align: left;
+}
+
+.sedan{
+  background-color: var(--orange);
+  border-radius: 10px 10px 0 0;
+}
+.seddan button{
+  color:var(--orange);
+}
+
+.suvs{
+  background-color: var(--darkCyan);
+}
+
+.luxury{
+  background-color: var(--VaryDarkCyan);
+  border-radius: 0 0 10px 10px;
+}
+
+button{
+  font-size: 16px;
+  background-color: var(--ligthGray);
+  border: none;
+  border: 2px solid var(--ligthGray);
+  border-radius: 2rem;
+  padding: .8rem 1.9rem;
+}
+
+button:hover{
+  color: transparent;
+}
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+
+@media screen and (min-width:768px){
+  main{
+    display: flex;
+    gap: 7rem;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    
+  }
+
+  .setores{
+    width: 100%;
+    max-width: 310px;
+    min-height: 480px;
+    padding: 3rem 3.4rem;
+  }
 }
