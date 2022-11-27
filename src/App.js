@@ -10,6 +10,7 @@ const veiculos = [
     details: [
       {
         nome: "SEDANS",
+        description: "SedansCarLogo",
         img: sedan,
         texto:
           "Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on you next road trip.",
@@ -23,6 +24,7 @@ const veiculos = [
     details: [
       {
         nome: "SUVS",
+        description: "SuvsCarLogo",
         img: suvs,
         texto:
           "Take an SUV for its spacious interios, power, and versatility. Perfect for your next family vacation and off-road adventures.",
@@ -36,6 +38,7 @@ const veiculos = [
     details: [
       {
         nome: "LUXURY",
+        description: "LuxuryCarLogo",
         img: luxury,
         texto:
           "Cruise in the best car brands whitout the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style.",
@@ -64,7 +67,7 @@ function Cars({ id, details }) {
       {details.map((det) => (
         <div className="flex">
           <div className="img">
-            <img src={det.img} />
+            <img src={det.img} alt={det.description}/>
           </div>
 
           <div className="titulo">
