@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: 
-- Live Site URL: 
+- Solution URL: https://github.com/Jonata-tr/3ColumCard
+- Live Site URL: https://3-colum-card-three.vercel.app
 
 ## My process
 
